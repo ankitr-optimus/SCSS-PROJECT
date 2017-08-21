@@ -1,0 +1,17 @@
+@mixin text-ellipsis() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+@function col($unit) {
+    @return 100*$unit;
+    
+}
+
+@each $color in red green blue {
+    .icon-#{$color} {
+        background: $color;
+    }
+}

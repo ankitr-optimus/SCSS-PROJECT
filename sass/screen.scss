@@ -1,0 +1,32 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3/";
+@import "mixin";
+
+$padding: 50px;
+
+
+ body {
+     padding: $padding;
+     height: 100%;
+     @include box-shadow();
+ }
+
+ html {
+     width: 100%;
+     @include border-radius(10px);
+ }
+
+.display-flex {
+    @include box-sizing(border-box);
+}
+
+.display-flex {
+    @include opacity(.5);
+    @include text-ellipsis;
+}
+
